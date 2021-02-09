@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Daily Journey</title>
+
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+  <!--CSS Stylesheet-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/CSS/styles.css" />
+  <link rel="stylesheet" href="/css/contact.css">
+
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/0fa68b04a7.js" crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand title">DAILY JOURNEY</p>
+      </div>
+      <ul class="nav navbar-nav">
+        <li id="home" class="nav-item"><a class="nav-link" href="/">HOME</a></li>
+        <li id="about" class="nav-item"><a class="nav-link" href="/about">ABOUT</a></li>
+        <li id="contact" class="nav-item"><a class="nav-link" href="/contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>CONTACT</h1>
+
+    <p>You can contact me here. Let me hear you!</p>
+
+    <!-- Contact form -->
+    <form class="contact" id="contact-form" action="/contact" method="post">
+      <div class="contact1">
+        <input id="name" class="contact-input" type="text" name="name" value="" placeholder="Your name">
+        <small class="name">H</small>
+        <input id="email" class="contact-input" type="text" name="email" value="" placeholder="Email">
+        <small class="email">H</small>
+        <button class="submit-btn" type="submit" name="button">Submit</button>
+      </div>
+      <div class="contact2">
+        <textarea id="message" class="contact-text" name="message" rows="8" cols="80" placeholder="Message"></textarea>
+        <small class="message">H</small>
+      </div>
+    </form>
+
+    <!-- Mail -->
+    <div class="mail-container">
+      <!-- <i class="fas fa-envelope"></i> -->
+      <p class="mail">youremail@mail.com</p>
+    </div>
+
+    <!-- Social links -->
+    <div class="social">
+      <a class="nav-link" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a class="nav-link" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a class="nav-link" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+
+    <script src="js/contact.js" charset="utf-8"></script>
+
+    <%- include("partials/footer") -%>
